@@ -1,24 +1,24 @@
 #pragma once
 
 #include <stdio.h>
-// ²úÉúËæ»úÊıĞèÒªÒıÈëµÄÍ·ÎÄ¼ş
+// äº§ç”Ÿéšæœºæ•°éœ€è¦å¼•å…¥çš„å¤´æ–‡ä»¶
 #include <stdlib.h>
 #include <time.h>
 
-// ·ûºÅµÄ¶¨Òå
+// ç¬¦å·çš„å®šä¹‰
 #define ROW 3
 #define COL 3
 
-// º¯ÊıµÄÉùÃ÷
-// ³õÊ¼»¯ÆåÅÌµÄº¯Êı
+// å‡½æ•°çš„å£°æ˜
+// åˆå§‹åŒ–æ£‹ç›˜çš„å‡½æ•°
 void InitBoard(char board[ROW][COL], int row, int col);
-// ´òÓ¡ÆåÅÌµÄº¯Êı
+// æ‰“å°æ£‹ç›˜çš„å‡½æ•°
 void DisplayBoard(char board[ROW][COL], int row, int col);
-
+// ç©å®¶ä¸‹æ£‹
 void PlayerMove(char board[ROW][COL], int row, int col);
-
+// ç”µè„‘ä¸‹æ£‹
 void ComputerMove(char board[ROW][COL], int row, int col);
-
+// åˆ¤æ–­è¾“èµ¢çŠ¶æ€
 char IsWin(char board[ROW][COL], int row, int col);
-
+// åˆ¤æ–­æ£‹ç›˜æ˜¯å¦ä¸‹æ»¡
 int IsFull(char board[ROW][COL], int row, int col);
